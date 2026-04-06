@@ -90,9 +90,88 @@ body {
     width: 100%;
 }
 
-.contact-section h2 {
+.contact-section h2, .ai-section h2 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+}
+
+.status-msg {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.upload-container {
+    margin: 1.5rem 0;
+}
+
+#image-upload {
+    display: none;
+}
+
+.upload-label {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.upload-label:hover {
+    background-color: var(--btn-hover);
+}
+
+#image-upload[disabled] + .upload-label {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#image-preview-container {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+#image-preview {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.result-container {
+    margin-top: 1.5rem;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.status-ok {
+    background-color: #4CAF50;
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.4);
+}
+
+.status-ng {
+    background-color: #f44336;
+    box-shadow: 0 0 15px rgba(244, 67, 54, 0.4);
+}
+
+.confidence-msg {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
 
 .contact-form {

@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lottery Number Generator</title>
+    <title>Lottery Number Generator & AI Inspection</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
 </head>
 <body>
     <div class="theme-toggle">
@@ -14,6 +16,23 @@
         <h1>Lottery Number Generator</h1>
         <div class="lotto-numbers"></div>
         <button id="generator-btn">Generate Numbers</button>
+
+        <div class="divider"></div>
+
+        <section class="ai-section">
+            <h2>Smartphone Quality Check (AI)</h2>
+            <p id="model-status" class="status-msg">Loading AI model...</p>
+            <div class="upload-container">
+                <input type="file" id="image-upload" accept="image/*" disabled>
+                <label for="image-upload" class="upload-label">
+                    <span>Upload Smartphone Image</span>
+                </label>
+            </div>
+            <div id="image-preview-container">
+                <img id="image-preview" src="" alt="Image Preview" style="display:none;">
+            </div>
+            <div id="prediction-result" class="result-container"></div>
+        </section>
 
         <div class="divider"></div>
 
