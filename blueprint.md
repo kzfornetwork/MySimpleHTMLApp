@@ -1,31 +1,26 @@
-
 # Project Blueprint
 
 ## Overview
-
-This is a simple web application that generates lottery numbers.
-
-## Current State
-
-This is the initial version of the application.
+A simple, modern Lottery Number Generator web application.
 
 ## Implemented Features
+- **Lottery Number Generation**: Generates 6 unique numbers (1-45).
+- **Sorted Display**: Numbers are automatically sorted in ascending order.
+- **Modern UI**: Clean, responsive design with polished typography and spacing.
+- **Theme Support (Dark/Light Mode)**: 
+    - Toggle between Light and Dark themes.
+    - Persistent theme preference using `localStorage`.
+    - Smooth CSS transitions between themes.
 
-*   **Lottery Number Generation:** Generates 6 unique random numbers between 1 and 45.
-*   **User Interface:** A simple and clean interface to display the numbers and a button to generate them.
+## Technical Details
+- **HTML5**: Semantic structure.
+- **CSS3**: Modern styling using CSS Variables (Custom Properties), Flexbox, and transitions.
+- **JavaScript (ES6+)**: 
+    - DOM manipulation for dynamic number display.
+    - Set object for unique number generation.
+    - `localStorage` for theme state persistence.
 
-## Current Task
-
-### Plan
-
-1.  **Modify `index.html`:**
-    *   Change the title to "Lottery Number Generator".
-    *   Create a container for the lottery number generator.
-    *   Add a title.
-    *   Add a placeholder for the generated numbers.
-    *   Add a button to trigger the number generation.
-2.  **Modify `style.css`:**
-    *   Style the lottery number generator for a better user experience.
-3.  **Modify `main.js`:**
-    *   Implement the lottery number generation logic.
-    *   Add an event listener to the button to display the numbers.
+## Project Structure
+- `index.html`: Main structure and entry point.
+- `style.css`: All styling, including theme-specific variables.
+- `main.js`: Application logic and theme switching functionality.
