@@ -11,6 +11,10 @@ A simple, modern Lottery Number Generator web application.
     - Toggle between Light and Dark themes.
     - Persistent theme preference using `localStorage`.
     - Smooth CSS transitions between themes.
+- **Partnership Inquiry Form**: 
+    - A simple contact form for potential partners.
+    - Integrated with Formspree for backend processing.
+    - Fully themed and mobile-responsive.
 
 ## Technical Details
 - **HTML5**: Semantic structure.
@@ -19,6 +23,7 @@ A simple, modern Lottery Number Generator web application.
     - DOM manipulation for dynamic number display.
     - Set object for unique number generation.
     - `localStorage` for theme state persistence.
+- **Formspree Integration**: Backend-less form handling for inquiries.
 
 ## Project Structure
 - `index.html`: Main structure and entry point.
